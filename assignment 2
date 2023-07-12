@@ -1,0 +1,378 @@
+1. Scenario: A company wants to analyze the sales performance of its products in different regions. They have collected the following data:
+   Region A: [10, 15, 12, 8, 14]
+   Region B: [18, 20, 16, 22, 25]
+   Calculate the mean sales for each region.
+
+2. Scenario: A survey is conducted to measure customer satisfaction on a scale of 1 to 5. The data collected is as follows:
+   [4, 5, 2, 3, 5, 4, 3, 2, 4, 5]
+   Calculate the mode of the survey responses.
+
+3. Scenario: A company wants to compare the salaries of two departments. The salary data for Department A and Department B are as follows:
+   Department A: [5000, 6000, 5500, 7000]
+   Department B: [4500, 5500, 5800, 6000, 5200]
+   Calculate the median salary for each department.
+
+4. Scenario: A data analyst wants to determine the variability in the daily stock prices of a company. The data collected is as follows:
+   [25.5, 24.8, 26.1, 25.3, 24.9]
+   Calculate the range of the stock prices.
+
+5. Scenario: A study is conducted to compare the performance of two different teaching methods. The test scores of the students in each group are as follows:
+   Group A: [85, 90, 92, 88, 91]
+   Group B: [82, 88, 90, 86, 87]
+   Perform a t-test to determine if there is a significant difference in the mean scores between the two groups.
+
+6. Scenario: A company wants to analyze the relationship between advertising expenditure and sales. The data collected is as follows:
+   Advertising Expenditure (in thousands): [10, 15, 12, 8, 14]
+   Sales (in thousands): [25, 30, 28, 20, 26]
+   Calculate the correlation coefficient between advertising expenditure and sales.
+
+7. Scenario: A survey is conducted to measure the heights of a group of people. The data collected is as follows:
+   [160, 170, 165, 155, 175, 180, 170]
+   Calculate the standard deviation of the heights.
+
+8. Scenario: A company wants to analyze the relationship between employee tenure and job satisfaction. The data collected is as follows:
+   Employee Tenure (in years): [2, 3, 5, 4, 6, 2, 4]
+   Job Satisfaction (on a scale of 1 to 10): [7, 8, 6, 9, 5, 7, 6]
+   Perform a linear regression analysis to predict job satisfaction based on employee tenure.
+
+9. Scenario: A study is conducted to compare the effectiveness of two different medications. The recovery times of the patients in each group are as follows:
+   Medication A: [10, 12, 14, 11, 13]
+   Medication B: [15, 17, 16, 14, 18]
+   Perform an analysis of variance (ANOVA) to determine if there is a significant difference in the mean recovery times between the two medications.
+
+10. Scenario: A company wants to analyze customer feedback ratings on a scale of 1 to 10. The data collected is
+
+ as follows:
+    [8, 9, 7, 6, 8, 10, 9, 8, 7, 8]
+    Calculate the 75th percentile of the feedback ratings.
+
+11. Scenario: A quality control department wants to test the weight consistency of a product. The weights of a sample of products are as follows:
+    [10.2, 9.8, 10.0, 10.5, 10.3, 10.1]
+    Perform a hypothesis test to determine if the mean weight differs significantly from 10 grams.
+
+12. Scenario: A company wants to analyze the click-through rates of two different website designs. The number of clicks for each design is as follows:
+    Design A: [100, 120, 110, 90, 95]
+    Design B: [80, 85, 90, 95, 100]
+    Perform a chi-square test to determine if there is a significant difference in the click-through rates between the two designs.
+
+13. Scenario: A survey is conducted to measure customer satisfaction with a product on a scale of 1 to 10. The data collected is as follows:
+    [7, 9, 6, 8, 10, 7, 8, 9, 7, 8]
+    Calculate the 95% confidence interval for the population mean satisfaction score.
+
+14. Scenario: A company wants to analyze the effect of temperature on product performance. The data collected is as follows:
+    Temperature (in degrees Celsius): [20, 22, 23, 19, 21]
+    Performance (on a scale of 1 to 10): [8, 7, 9, 6, 8]
+    Perform a simple linear regression to predict performance based on temperature.
+
+15. Scenario: A study is conducted to compare the preferences of two groups of participants. The preferences are measured on a Likert scale from 1 to 5. The data collected is as follows:
+    Group A: [4, 3, 5, 2, 4]
+    Group B: [3, 2, 4, 3, 3]
+    Perform a Mann-Whitney U test to determine if there is a significant difference in the median preferences between the two groups.
+
+16. Scenario: A company wants to analyze the distribution of customer ages. The data collected is as follows:
+    [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+    Calculate the interquartile range (IQR) of the ages.
+
+17. Scenario: A study is conducted to compare the performance of three different machine learning algorithms. The accuracy scores for each algorithm are as follows:
+    Algorithm A: [0.85, 0.80, 0.82, 0.87, 0.83]
+    Algorithm B: [0.78, 0.82, 0.84, 0.80, 0.79]
+    Algorithm C: [0.90, 0.88, 0.89, 0.86, 0.87]
+    Perform a Kruskal-Wallis test to determine if there is a significant difference in the median accuracy scores between the algorithms.
+
+18. Scenario: A company wants to analyze the effect of price on sales. The data collected is as follows:
+    Price (in dollars): [10, 15, 12, 8, 14]
+    Sales: [100, 80, 90, 110, 95]
+    Perform a simple linear regression to predict
+
+ sales based on price.
+
+19. Scenario: A survey is conducted to measure the satisfaction levels of customers with a new product. The data collected is as follows:
+    [7, 8, 9, 6, 8, 7, 9, 7, 8, 7]
+    Calculate the standard error of the mean satisfaction score.
+
+20. Scenario: A company wants to analyze the relationship between advertising expenditure and sales. The data collected is as follows:
+    Advertising Expenditure (in thousands): [10, 15, 12, 8, 14]
+    Sales (in thousands): [25, 30, 28, 20, 26]
+    Perform a multiple regression analysis to predict sales based on advertising expenditure.
+
+solutions-
+1. To calculate the mean sales for each region, you need to sum up the sales values for each region and then divide by the number of data points.
+
+```python
+region_a_sales = [10, 15, 12, 8, 14]
+region_b_sales = [18, 20, 16, 22, 25]
+
+mean_sales_region_a = sum(region_a_sales) / len(region_a_sales)
+mean_sales_region_b = sum(region_b_sales) / len(region_b_sales)
+
+print("Mean Sales for Region A:", mean_sales_region_a)
+print("Mean Sales for Region B:", mean_sales_region_b)
+```
+
+2. To calculate the mode of the survey responses, you can use the `statistics` module in Python.
+
+```python
+import statistics
+
+survey_responses = [4, 5, 2, 3, 5, 4, 3, 2, 4, 5]
+mode = statistics.mode(survey_responses)
+
+print("Mode of the survey responses:", mode)
+```
+
+3. To calculate the median salary for each department, you need to sort the salary data and find the middle value or the average of the two middle values.
+
+```python
+department_a_salaries = [5000, 6000, 5500, 7000]
+department_b_salaries = [4500, 5500, 5800, 6000, 5200]
+
+sorted_a_salaries = sorted(department_a_salaries)
+sorted_b_salaries = sorted(department_b_salaries)
+
+median_a = statistics.median(sorted_a_salaries)
+median_b = statistics.median(sorted_b_salaries)
+
+print("Median Salary for Department A:", median_a)
+print("Median Salary for Department B:", median_b)
+```
+
+4. To calculate the range of the stock prices, you subtract the minimum value from the maximum value.
+
+```python
+stock_prices = [25.5, 24.8, 26.1, 25.3, 24.9]
+price_range = max(stock_prices) - min(stock_prices)
+
+print("Range of Stock Prices:", price_range)
+```
+
+5. To perform a t-test to determine if there is a significant difference in the mean scores between the two groups, you can use the `ttest_ind` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+group_a_scores = [85, 90, 92, 88, 91]
+group_b_scores = [82, 88, 90, 86, 87]
+
+t_statistic, p_value = stats.ttest_ind(group_a_scores, group_b_scores)
+
+print("T-Statistic:", t_statistic)
+print("P-Value:", p_value)
+```
+
+6. To calculate the correlation coefficient between advertising expenditure and sales, you can use the `corrcoef` function from the `numpy` module.
+
+```python
+import numpy as np
+
+advertising_expenditure = [10, 15, 12, 8, 14]
+sales = [25, 30, 28, 20, 26]
+
+correlation = np.corrcoef(advertising_expenditure, sales)[0, 1]
+
+print("Correlation Coefficient:", correlation)
+```
+
+7. To calculate the standard deviation of the heights, you can use the `statistics` module.
+
+```python
+import statistics
+
+heights = [160, 170, 165, 155, 175, 180, 170]
+standard_deviation = statistics.stdev(heights)
+
+print("Standard Deviation of Heights:", standard_deviation)
+```
+
+8. To perform a linear regression analysis to predict job satisfaction based on employee tenure, you can use the `scipy.stats.linregress` function.
+
+```python
+from scipy import stats
+
+employee_tenure = [2, 3, 5, 4, 6, 2, 4]
+job_satisfaction = [7, 8, 6, 9, 5, 7, 6]
+
+slope, intercept, r_value, p_value, std_err = stats.linregress(employee_tenure, job_satisfaction)
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-value:", r_value)
+print("P-value:", p_value)
+print("Standard Error:", std_err)
+```
+
+9. To perform an analysis of variance (ANOVA) to determine if there is a significant difference in the mean recovery times between the two medications, you can use the `f_oneway` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+medication_a_times = [10, 12, 14, 11, 13]
+medication_b_times = [15, 17, 16, 14, 18]
+
+f_statistic, p_value = stats.f_oneway(medication_a_times, medication_b_times)
+
+print("F-Statistic:", f_statistic)
+print("P-Value:", p_value)
+```
+
+10. To calculate the 75th percentile of the feedback ratings, you can use the `numpy.percentile` function.
+
+```python
+import numpy as np
+
+feedback_ratings = [8, 9, 7, 6, 8, 10, 9, 8, 7, 8]
+percentile_75 = np.percentile(feedback_ratings, 75)
+
+print("75th Percentile of Feedback Ratings:", percentile_75)
+```
+
+11. To perform a hypothesis test to determine if the mean weight differs significantly from 10 grams, you can use a one-sample t-test from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+weights = [10.2, 9.8, 10.0, 10.5, 10.3, 10.1]
+
+t_statistic, p_value = stats.ttest_1samp(weights, 10)
+
+print("T-Statistic:", t_statistic)
+print("P-Value:", p_value)
+```
+
+12. To perform a chi-square test to determine if there is a significant difference in the click-through rates between the two designs, you can use the `chi2_contingency` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+design_a_clicks = [100, 120, 110, 90, 95]
+design_b_clicks = [80, 85, 90, 95, 100]
+
+contingency_table = [design_a_clicks, design_b_clicks]
+
+chi2_statistic, p_value, _, _ = stats.chi2_contingency(contingency_table)
+
+print("Chi-Square Statistic:", chi2_statistic)
+print("P-Value:", p_value)
+```
+
+13. To calculate the 95% confidence interval for the population mean satisfaction score, you can use the `t.interval` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+satisfaction_scores = [7, 9, 6, 8, 10, 7, 8, 9, 7, 8]
+
+confidence_interval = stats.t.interval(0.95, len(satisfaction_scores) - 1, loc=statistics.mean(satisfaction_scores), scale=statistics.stdev(satisfaction_scores) / (len(satisfaction_scores) ** 0
+
+.5))
+
+print("95% Confidence Interval:", confidence_interval)
+```
+
+14. To perform a simple linear regression to predict performance based on temperature, you can use the `linregress` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+temperature = [20, 22, 23, 19, 21]
+performance = [8, 7, 9, 6, 8]
+
+slope, intercept, r_value, p_value, std_err = stats.linregress(temperature, performance)
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-value:", r_value)
+print("P-value:", p_value)
+print("Standard Error:", std_err)
+```
+
+15. To perform a Mann-Whitney U test to determine if there is a significant difference in the median preferences between the two groups, you can use the `mannwhitneyu` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+group_a_preferences = [4, 3, 5, 2, 4]
+group_b_preferences = [3, 2, 4, 3, 3]
+
+u_statistic, p_value = stats.mannwhitneyu(group_a_preferences, group_b_preferences)
+
+print("U-Statistic:", u_statistic)
+print("P-Value:", p_value)
+```
+
+16. To calculate the interquartile range (IQR) of the ages, you can use the `numpy.percentile` function.
+
+```python
+import numpy as np
+
+ages = [25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+q1 = np.percentile(ages, 25)
+q3 = np.percentile(ages, 75)
+iqr = q3 - q1
+
+print("Interquartile Range (IQR):", iqr)
+```
+
+17. To perform a Kruskal-Wallis test to determine if there is a significant difference in the median accuracy scores between the algorithms, you can use the `kruskal` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+algorithm_a_scores = [0.85, 0.80, 0.82, 0.87, 0.83]
+algorithm_b_scores = [0.78, 0.82, 0.84, 0.80, 0.79]
+algorithm_c_scores = [0.90, 0.88, 0.89, 0.86, 0.87]
+
+h_statistic, p_value = stats.kruskal(algorithm_a_scores, algorithm_b_scores, algorithm_c_scores)
+
+print("H-Statistic:", h_statistic)
+print("P-Value:", p_value)
+```
+
+18. To perform a simple linear regression to predict sales based on price, you can use the `linregress` function from the `scipy.stats` module.
+
+```python
+from scipy import stats
+
+price = [10, 15, 12, 8, 14]
+sales = [100, 80, 90, 110, 95]
+
+slope, intercept, r_value, p_value, std_err = stats.linregress(price, sales)
+
+print("Slope:", slope)
+print("Intercept:", intercept)
+print("R-value:", r_value)
+print("P-value:", p_value)
+print("Standard Error:", std_err)
+```
+
+19. To calculate the standard error of the mean satisfaction score, you can divide the standard deviation by the square root of the sample size.
+
+```python
+import statistics
+
+satisfaction_scores = [7, 8, 9, 6, 8, 7, 9, 7, 8, 7]
+standard_deviation = statistics.stdev(satisfaction_scores)
+sample_size = len(satisfaction_scores)
+standard_error = standard_deviation / (sample_size ** 0.5)
+
+print("Standard Error of the Mean Satisfaction Score:", standard_error)
+```
+
+20. To perform a multiple regression analysis to predict sales based on advertising expenditure, you can use the `statsmodels` library.
+
+```python
+import statsmodels.api as sm
+import numpy as np
+
+advertising_expenditure = [10, 15, 12, 8, 14]
+sales = [25, 30, 28, 20, 26]
+
+# Add a constant term to the advertising expenditure data
+expenditure_with_constant = sm.add_constant(advertising_expenditure)
+
+# Fit the multiple regression model
+model = sm.OLS(sales, expenditure_with_constant)
+results = model.fit()
+
+# Print the coefficients
+print("Intercept:", results.params[0])
+print("Slope:", results.params[1])
